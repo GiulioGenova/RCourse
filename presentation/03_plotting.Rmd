@@ -1,0 +1,88 @@
+---
+title: "Plotting with ggolot2"
+author: "Giulio Genova"
+date: "2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,fig.width = 4)
+```
+
+
+## List of lectures for the course
+
+- Intro to the course, R and RStudio
+- Data wrangling exploring and summarizing with dplyr
+- **Plotting with ggplot2**
+- Cluster analysis or Principal component analysis
+
+## List of topics for today
+
+- Why ggplot
+- Grammar of graphics
+- Using ggplot + some examples
+- Some practice
+<br/>
+<br/>
+<br/>
+&nbsp; <img src="https://tidyverse.tidyverse.org/logo.png" alt="tdvlogo" width="150"/> &nbsp; &nbsp; <img src="https://ggplot2.tidyverse.org/logo.png" alt="gglogo" width="140"/>
+
+
+## What is &nbsp; &nbsp; <img src="https://ggplot2.tidyverse.org/logo.png" alt="gglogo" width="140"/>
+
+ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details
+
+{dplyr} and {ggplot2} are part of the tidyverse
+
+## Why using &nbsp; &nbsp; <img src="https://ggplot2.tidyverse.org/logo.png" alt="gglogo" width="140"/>
+
+    Automatic legends, colors, etc.
+
+    Easy superposition, facetting, etc.
+
+    Nice rendering.
+
+    Store any ggplot2 object for modification or future recall. 
+    Super useful for packages.
+
+    Lots of users (less bugs, much help on Stack Overflow).
+
+    Lots of extensions.
+
+    Nice saving option.
+
+
+## What is the grammar of graphics
+
+Presents a unique foundation for producing almost every quantitative graphic found in scientific journals, newspapers, statistical packages, and data visualization systems
+
+Leland Wilkinson
+
+ggplot(data = **DATA**) +                   <br/>
+  **GEOM_FUNCTION** (                       <br/>
+     mapping = aes(**MAPPINGS**),           <br/>
+     stat = **STAT**,                       <br/>
+     position = **POSITION**                <br/>
+  ) +                                       <br/>
+  **COORDINATE_FUNCTION** +                 <br/>
+  **FACET_FUNCTION**                        <br/>
+
+You can uniquely describe any plot as a combination of these 7 parameters.
+
+## Help and documentation
+
+Where do I go to find out more about this?
+
+- Official Tidyverse[website](https://www.tidyverse.org/)
+- ggplot2 [page](https://ggplot2.tidyverse.org/)
+- Nice [presentation](https://privefl.github.io/R-presentation/ggplot2.html#52)
+- Nice [talk](https://resources.rstudio.com/rstudio-conf-2020/the-glamour-of-graphics-william-chase
+) about designing good looking graphs
+
+
+## Some Practice now
+
+- We will now go on and take a look at ggplot2 functions and syntax, see some exaples and do some practice
+
+- We can also answer questions and see the excercises from the last lecture

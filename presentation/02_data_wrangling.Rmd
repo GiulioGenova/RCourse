@@ -1,0 +1,99 @@
+---
+title: "Data wrangling with dplyr"
+author: "Giulio Genova"
+date: "2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,fig.width = 4)
+```
+
+## About us - Lecturer and participants
+
+Let's meet each other.
+
+I'm Giulio Genova
+
+Phd student in Soil Science at Unibz and Eurac
+
+I work with R since my master thesis in 2017
+
+<br/>
+ 
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Free_University_of_Bozen-Bolzano_logo.svg" alt="unibz" align = "left" width=150"/> <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Eurac_Research_-_logo.png" alt="eurac" align = "right" width=250"/>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+contatct: giulio.genova@eurac.edu 
+
+## List of lectures for the course
+
+- Intro to the course, R and RStudio
+- **Data wrangling exploring and summarizing with dplyr**
+- Plotting with ggplot2
+- Cluster analysis or Principal component analysis
+
+## List of topics for today
+
+- Why dplyr and the tidyverse
+- Data wrangling exploring and summarizing with dplyr
+- Some practice
+<br/>
+<br/>
+<br/>
+&nbsp; <img src="https://tidyverse.tidyverse.org/logo.png" alt="tdvlogo" width="150"/> &nbsp; &nbsp; <img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/dplyr.png" alt="dplyrlogo" width="140"/>
+
+
+## What is the &nbsp; &nbsp;  <img src="https://tidyverse.tidyverse.org/logo.png" alt="tdvlogo" width="140"/>
+
+"The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures"
+
+- Easy grammar
+- Huge community
+- Nice documentation
+- Cosidered the "state of the art"
+
+{dplyr} and {ggplot2} are part of the tidyverse
+
+## What is &nbsp; &nbsp; <img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/dplyr.png" alt="dplyrlogo" width="140"/>
+
+"dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:"
+
+    - mutate() adds new variables that are functions of existing variables
+    - select() picks variables based on their names.
+    - filter() picks cases based on their values.
+    - summarise() reduces multiple values down to a single summary.
+    - arrange() changes the ordering of the rows.
+
+## what is tidy data
+There are three interrelated rules which make a dataset tidy:
+
+    - Each variable must have its own column.
+    - Each observation must have its own row.
+    - Each value must have its own cell.
+
+<img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" alt="dplyrlogo" width="800"/>
+
+Following three rules makes a dataset tidy: variables are in columns, observations are in rows, and values are in cells. 
+
+## Help and documentation
+Where do I go to find out more about this?
+
+- Official Tidyverse[website](https://www.tidyverse.org/)
+- Dplyr [page](https://dplyr.tidyverse.org/)
+- Nice [presentation](https://www.slideshare.net/romainfrancois/dplyr-53923420) on Slidesahre
+
+<img src="images/tdvwebsite.PNG" alt="rstudio" align="center" width="600"/>
+
+## Some Practice now
+
+- We will now go on and take a look at Dplyr functions and syntax, see some exaples and do some practice
+
+- We can also answer questions and see the excercises from the last lecture
